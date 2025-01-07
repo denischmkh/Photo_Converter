@@ -48,6 +48,7 @@ async def upload_file(file: UploadFile = File(...)):
 
     # Конвертируем в JPEG
     output_path = UPLOAD_FOLDER / f"IMG.jpeg"
+
     convert_raw_to_jpeg(file_path, output_path)
 
     # Отправляем обратно файл

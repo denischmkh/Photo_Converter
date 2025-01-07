@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background-color: #020000;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -17,7 +17,7 @@
         }
 
         .container {
-            background-color: #fff;
+            background-color: #bdbbbb;
             border-radius: 8px;
             padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -32,10 +32,11 @@
         }
 
         label {
-            font-size: 16px;
+            font-size: 18px;
             color: #555;
             display: block;
             margin-bottom: 10px;
+            text-align: center;
         }
 
         input[type="file"] {
@@ -44,8 +45,8 @@
             padding: 12px;
             margin-bottom: 20px;
             border-radius: 5px;
-            border: 1px solid #ddd;
-            background-color: #f9f9f9;
+            border: 1px solid #bdbbbb;
+            background-color: #bdbbbb;
             font-size: 14px;
         }
 
@@ -89,11 +90,11 @@
 <body>
 
     <div class="container">
-        <h1>Upload RAW or CR2 Image File</h1>
+        <h1>Выберите файл формата .CR2 или .RAW</h1>
         <form action="/upload/" method="post" enctype="multipart/form-data">
-            <label for="file">Choose file (RAW/CR2):</label>
+            <label for="file">Выберите файл:</label>
             <input type="file" name="file" accept=".raw,.cr2,.jpeg" required>
-            <button type="submit">Upload</button>
+            <button type="submit">Конвертировать</button>
         </form>
     </div>
 
